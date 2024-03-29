@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ornek</title>
+    <link rel="stylesheet" href="003_ornek.css">
+    <style>
+        label{
+            margin-bottom: 5px;
+            display: block;
+        }
+        input{
+            font-size: 11px;
+            background-color: indianred;
+        }
+        input:focus{
+            background-color: aliceblue;
+        }
+        button{
+            color: indianred;
+        }
+        button:hover{
+            background-color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+            <img style="border-radius: 200px;" src="https://picsum.photos/100/100" alt="">
+        </div>
+        <div class="input">
+            <label for="ad">Kullanıcı adı </label>
+            <input type="text" name="username" id="ad">
+        </div>
+
+        <div class="input">
+            <label for="sifre">Şifre </label>
+            <input type="password" name="password" id="sifre">
+        </div>
+
+        <div class="button">
+            <button type="submit">Giriş</button>
+        </div>
+
+    </div>
+</body>
+</html>

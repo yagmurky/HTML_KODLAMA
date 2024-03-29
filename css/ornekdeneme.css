@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    background-color: beige;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+}
+.col-list{
+    background-color: chocolate;
+    width: 10%;
+}
+.row{
+    background-color: rgb(232, 207, 165);
+    height: 40vw;
+    margin-bottom: 5px;
+    display: flex;
+}
+.col-2{
+    flex: 2;
+}
+.col-4{
+    flex: 4;
+}
+.col-8{
+    flex: 8;
+}

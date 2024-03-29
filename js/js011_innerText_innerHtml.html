@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innet Text & Innet HTML</title>
+</head>
+<body>
+    <p>
+        Burada bir metin olacaktır, sonra vurgulanacak metin gelir
+        <strong>Java Dünyası</strong>
+        sonrasında her şey aynı....
+        <h1></h1>
+    </p>
+    <div id="container"></div>
+    <script>
+        var p = document.querySelector('p');
+        console.log(p.innerText);
+        console.log(p.innerHTML);
+
+        let div = document.getElementById('container');
+        div.innerHTML = "<h1>Yağmurrr</h1>"
+    </script>
+</body>
+</html>

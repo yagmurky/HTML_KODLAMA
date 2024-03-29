@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özel bir tablo yapalım</title>
+    <style>
+        th, td{
+            border: 1px solid black;
+            padding: 4px;
+        }
+        table{
+            /*
+            collapse -> sınırları birleştirir
+            seperate -> sınırları ayırır
+
+            */
+            border-collapse: separate;
+            width: 100%;
+        }
+        tr:nth-child(even){
+            background-color: rgb(195, 223, 255);
+        }
+        tr:hover{
+            background-color: rgb(220, 235, 248);
+        }
+        th{
+            background-color:rgb(18, 54, 94); 
+            color: #fff;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ad Soyad</th>
+                <th>Telefon</th>
+                <th>Adres</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Yağmur Kiraz</td>
+                <td>0 555 555 55 55</td>
+                <td>İstanbul</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ekin Çağatay Yıldız</td>
+                <td>0 555 666 66 66</td>
+                <td>İstanbul</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ayşe Tekin</td>
+                <td>0 556 777 77 77</td>
+                <td>Ankara</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mehmet Koçak</td>
+                <td>0 555 666 44 44</td>
+                <td>Bolu</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Ali Veli</td>
+                <td>0 533 775 88 99</td>
+                <td>Muğla</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Muhammet Veli</td>
+                <td>0 533 775 88 99</td>
+                <td>Yayla</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

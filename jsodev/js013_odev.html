@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veri Ekleme</title>
+    <link rel="stylesheet" href="js013_odev.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row-1">
+            <div class="col-1">
+                <div class="form-element-1">
+                    <div class="ms">
+                        <label for="id">ID</label>
+                        <br>
+                        <input class="inp1" type="text" name="id" id="id">
+                    </div>
+                    <div class="ms">
+                        <label for="telefon">Telefon</label>
+                        <br>
+                        <input class="inp1" type="text" name="telefon" id="telefon">
+                    </div>
+                </div>
+                <div class="form-element-1">
+                    <div class="ms">
+                        <label for="adsoyad">Ad Soyad</label>
+                        <br>
+                        <input class="inp1" type="text" name="adsoyad" id="adsoyad">
+                    </div>
+                    <div class="ms">
+                        <label for="meslek">Meslek</label>
+                        <br>
+                        <select class="inp2" name="meslek" id="meslek">
+                            <option value="01"> Öğretmen </option>
+                            <option value="02"> Biyolog </option>
+                            <option value="03"> Aşçı </option>
+                            <option value="04"> Garson </option>
+                            <option value="05"> Özalitçi </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-element-2">
+                    <div class="ms">
+                        <label for="adres">Adres</label>
+                        <br>
+                        <input class="inp1" style="width: 220%;" type="text" name="adres" id="adres">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col2ic">
+                    <button onclick="ekle('button')" id="ekleButonu" class="btncol2ic"  type="submit">EKLE</button>
+                </div>
+                <div class="col2ic">
+                    <button class="btncol2ic" type="reset">TEMİZLE</button>
+                </div>
+            </div>
+        </div>
+        <div class="row-2">
+            <table id="tablo" class="tbl">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Ad Soyad</th>
+                        <th>Telefon</th>
+                        <th>Meslek</th>
+                        <th>Adres</th>
+                        <th>İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody>
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script>
+        function ekle(){
+            const ekleButonu = document.getElementById("ekleButonu");
+            ekleButonu.addEventListener("click", () => {
+            // Input alanlarındaki değerleri al
+            const id = document.getElementById("id").value;
+            const adSoyad = document.getElementById("adsoyad").value;
+            const telefon = document.getElementById("telefon").value;
+            const meslek = document.getElementById("meslek").value;
+            const adres = document.getElementById("adres").value;
+        
+        
+            // Yeni bir satır oluştur
+            const satir = document.createElement("tr");
+            const duzenleSilDiv = document.createElement("div");
+            duzenleSilDiv.classList.add("duzenle-sil-div"); // Sınıf ekleme
+            // Düzenle ve Sil butonlarını oluştur
+            const duzenleButonu = document.createElement("button");
+            duzenleButonu.textContent = "D";
+            duzenleButonu.classList.add("duzenleButonu");
+            duzenleButonu.addEventListener("click", () => {
+                const satirId = satir.id; // Satır ID'si
+                const tdList = satir.getElementsByTagName("td"); // Satırdaki tüm hücreler
+                const id = tdList[0].textContent; // İlk hücredeki ID
+                const adSoyad = tdList[1].textContent; // İkinci hücredeki Ad Soyad
+                const telefon = tdList[2].textContent; // Üçüncü hücredeki Telefon
+                const meslek = tdList[3].textContent; // Dördüncü hücredeki Meslek
+                const adres = tdList[4].textContent; // Beşinci hücredeki Adres
+            });
+
+            const silButonu = document.createElement("button");
+            silButonu.textContent = "S";
+            silButonu.classList.add("silButonu"); // Sınıf ekleme
+            silButonu.addEventListener("click", () => {
+                // 1. Satır bilgilerini al
+                const satirId = satir.id; // Satır ID'si
+
+                // 2. Onay penceresi aç
+                if (!confirm(`Satır ${satirId} silinecek. Emin misiniz?`)) {
+                return; // İşlemi iptal et
+                }
+
+                 // 3. API veya Ajax ile veri silme
+                const xhr = new XMLHttpRequest();
+                xhr.open("DELETE", `api/sil/${satirId}`);
+                xhr.setRequestHeader("Content-Type", "application/json");
+                xhr.onload = () => {
+                    if (xhr.status === 200) {
+                    // Silme işlemi başarılı
+                    tablo.removeChild(satir);
+                    } else {
+                    // Hata mesajı göster
+                    alert(`Hata: ${xhr.responseText}`);
+                    }
+                    };
+                    xhr.send();
+
+                // 4. Başarılıysa satırı sil
+                if (silmeBaşarılı) {
+                tablo.removeChild(satir);
+            }
+            });
+
+            // Satırın hücresine div ekleme
+            satir.appendChild(duzenleSilDiv);
+            duzenleSilDiv.appendChild(duzenleButonu);
+            duzenleSilDiv.appendChild(silButonu);
+
+            // Yeni satıra hücreler ekle
+            satir.innerHTML = `
+                <td>${id}</td>
+                <td>${adSoyad}</td>
+                <td>${telefon}</td>
+                <td>${meslek}</td>
+                <td>${adres}</td>
+                <td>${duzenleButonu.outerHTML + silButonu.outerHTML }</td>
+            `;
+
+            // Yeni satırı tabloya ekle
+            const tablo = document.getElementById("tablo");
+            tablo.appendChild(satir);
+            });
+        }
+        
+    </script>
+</body>
+</html>

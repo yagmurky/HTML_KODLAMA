@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMMET</title>
+    <style>
+    table{
+        border: 1px;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <!--
+        emmet.io
+        . class
+        # id
+        > -> altında, çocuk element tanımlamak için
+        + -> aynı seviyede olan bileşenleri ifade eder.
+        * -> bir bileşenden kaç tane üretileceğini belirtmek için kullanılır.
+        ^ -> bulunduğu yerden bir üst seviyeye çıkar.
+
+        Ödev: İçerisinde 5 kolon ve 6 data satırı olan bir tablo oluşturun ve 
+        tablonun başlığının arka planı renkli olsun Aynı zamanda satırların rengi
+        tekler farklı çiftler farklı olacak şekilde arka planları renkli olsun.
+        Tabloyu css hariç oluşturacak emmet kodunu yazınız. cssleri de class ile
+        şekillendirerek yazınız.
+
+
+        --     table>thead>tr>th{Ad}+th{Soyad}+th{Adres}+th{Telefon}+th{Cinsiyet}^^tbody>(tr.satir$>td{Value}*5)*6
+
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Adres</th>
+                <th>Telefon</th>
+                <th>Cinsiyet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="satir1">
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+            </tr>
+            <tr class="satir2">
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+            </tr>
+            <tr class="satir3">
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+            </tr>
+            <tr class="satir4">
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+            </tr>
+            <tr class="satir5">
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+            </tr>
+            <tr class="satir6">
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+                <td>Value</td>
+            </tr>
+        </tbody>
+    </table>
+    
+ 
+    <table>
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Adres</th>
+                <th>Telefon</th>
+                <th>Soyad</th>
+                <th>SSS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

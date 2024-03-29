@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        div{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://34.163.161.35:8080/swagger-ui/index.html#/auth-controller/register" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="ad">Kullanıcı adı...: </label>
+            <input type="text" name="username" id="ad">
+        </div>
+        <div>
+            <label for="posta">Email adresi....: </label>
+            <input type="email" name="email" id="posta">
+        </div>
+        <div>
+            <label for="sifre">Şifre................: </label>
+            <input type="password" name="password" id="sifre">
+        </div>
+        <button type="submit">Üye Ol</button>
+        <button type="reset">Temizle</button>
+    </form>
+</body>
+</html>

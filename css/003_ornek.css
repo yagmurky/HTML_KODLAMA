@@ -1,0 +1,20 @@
+.container{
+    background-color: rgb(244, 219, 188);
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.button{
+    padding: 10px;
+    margin-left: 70%;
+    padding-bottom: 15px;
+    border-radius: 100spx;
+}
+input {
+    padding: 10px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #502828;
+    border-radius: 50px;
+}

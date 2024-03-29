@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="008_register.css">
+</head>
+<body>
+    <div class="container">
+        <!--username satırı-->
+        <div class="form-element">
+            <label for="ad">Username</label>
+            <input type="text" name="username" id="ad">
+        </div>
+        <!--email satırı-->
+        <div class="form-element">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <!--password satırı-->
+        <div class="form-element">
+            <label for="sifre">Password</label>
+            <input type="password" name="password" id="sifre">
+        </div>
+        <!--title satırı-->
+        <div class="form-element">
+            <label for="title">Title</label>
+            <select name="sehir" id="sehir">
+                <option value="01"> Öğrenci </option>
+                <option value="02"> Çalışan </option>
+            </select>
+        </div>
+        <!--Phone satırı-->
+        <div class="form-element">
+            <label for="telefon">Telefon</label>
+            <input type="telefon" name="telefon" id="telefon">
+        </div>
+        <!--Cinsiyet saturu-->
+        <div class="form-element">
+            <p>Cinsiyet</p>
+            <div>
+                <input type="radio" name="cinsiyet" id="cinsiyet">
+                <label for="cinsiyet">Erkek</label>
+                <input type="radio" name="cinsiyet" id="cinsiyet">
+                <label for="cinsiyet">Kadın</label>
+                <input type="radio" name="cinsiyet" id="cinsiyet">
+                <label for="cinsiyet">Belirtmek İstemiyor </label>
+            </div>
+            
+        </div>
+        <!--button-->
+        <div class="button">
+            <button type="submit">Üye Ol</button>
+        </div>
+        <!--link-->
+        <div class="form-element">
+            <form action="http://127.0.0.1:5500/css/login.html" method="get">
+                <button type="submit">Login forma git...</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+.row{
+    border: 2px solid rosybrown;
+    border-radius: 10px;
+}
+.row-1{
+    width: 70%;
+    height: 80px;
+    margin: 10px;
+    margin-left: 15%;
+    text-align: center;
+}
+.row-2{
+    margin: 10px;
+    width: 80%;
+    height: 600px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    border: 1px solid salmon;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 6px;
+    border-radius: 10px;
+}
+.card{
+    border-radius: 8px;
+    background-image: url(https://www.macfit.com/wp-content/uploads/2023/04/trekking-malzemeleri.jpg);
+    background-size: 100% 100%; /* Arka plan resmini div'in boyutuna göre ayarlar */
+    box-shadow: -17px -4px 92px -21px rgba(0,0,0,0.4),
+    0px 25px 16px 0px rgba(0,0,0,0.2);
+}
+.isim{
+    display: flex;
+    backdrop-filter: blur(10px) brightness(100%);
+    margin-top: 150px;
+    margin-left: 25px;
+    color: rgb(246, 233, 228);
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    border-radius: 15px;
+}
+.box{
+    border: 1px solid rgb(242, 227, 226);
+
+    display: flex;
+    height: 200px;
+    flex: 1;
+    height: 200px;
+    border: 1px solid rgb(242, 227, 226);
+    border-radius: 15px;
+    margin: 5px;
+}
+.p-input{
+    border: 1px solid gray;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.p-kod{
+    flex: 4;
+    background-color: #c0c2c3;
+    margin-left: 5px;
+}
+.p-phone{
+    flex: 8;  
+    border-radius: 8px;
+}
+.rs-1{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+.l-1{
+    width: 40px;
+    margin-top: 7px;
+}
+.l-2{
+    width: 40px;
+    margin-top: 7px;
+
+}
+.l-3{
+    width: 40px;
+    margin-top: 7px;
+
+}
+.l-1:hover{
+    transform: rotate(-45deg);
+
+}
+.l-3:hover {
+  transform: rotate(45deg);
+}
+
+.l-2:hover {
+    opacity: 0;
+}

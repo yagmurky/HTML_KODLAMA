@@ -1,0 +1,30 @@
+p{
+    color: chocolate;
+    font-size: small;
+    border: 1px dotted burlywood;
+}
+/*
+ID
+*/
+#manset{
+    color: saddlebrown;
+}
+#alt1{
+    color: darkgoldenrod;
+}
+#alt2{
+    color: darkred;
+}
+/* Class */
+.paragraf-type{
+    color: darkgoldenrod;
+}
+
+.paragraf-type-2{
+    font-weight: bolder;
+}
+
+.paragraf-type-3{
+    padding: 5px;
+    background-color: darkgrey;
+}

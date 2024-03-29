@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Kullanımları</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            width: 150px;
+            height: 100px;
+            background-color: red;
+            margin: 5px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+            box-sizing: border-box;
+            display: inline;
+        }
+        #first{
+            float: right;
+            background-color: blue;
+        }
+        #second{
+            float: right;
+            background-color: chocolate;
+        }
+        #third{
+            margin-top: 200px;
+            margin-right: 200px;
+            float: right;
+            box-shadow: 25px 12px 28px -20px rgba(0,0,0,0.45),
+            -34px -17px 21px -10px rgba(0,0,0,0.45);    
+        }
+        /*
+        Ölçü birimleri;
+        1- Mutlak birimler
+        px, in, cm, nm, pt, pc -- basım yayın
+
+        2-Kesin olmayan değişebilir, relative
+        em, ex, rem, %, vw, vh, vmin, vmax, ch  
+        16px - 1 rem
+        1 em - 1 font size
+        */
+
+    </style>
+</head>
+<body>
+    <div class="box" id="first"></div>
+    <div class="box" id="second"></div>
+    <div class="box" id="third"></div>
+</body>
+</html>

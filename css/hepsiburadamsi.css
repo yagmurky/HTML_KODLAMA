@@ -1,0 +1,175 @@
+.container{
+    display: flex;
+    flex-direction: column;
+ }
+ .row{
+     border: 2px solid green;
+     display: flex;
+     flex: 1;   
+     flex-direction: row; 
+ }
+ 
+ .col{
+     display: flex;
+     flex-direction: column;
+ }
+ .rowi{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+ }
+ 
+ .col-1{
+     flex: 1;
+ }
+ .col-2{
+     flex: 2;
+ }
+ .col-3{
+     flex: 3;
+ }
+ .col-4{
+     flex: 4;
+ }
+ .col-5{
+     flex: 5;
+ }
+ .col-6{
+     flex: 6;
+ }
+ .col-7{
+     flex: 7;
+ }
+ .col-8{
+     flex: 8;
+ }
+ 
+ 
+ .byt0{
+     width: 100%;
+ }
+ .byt1{
+     width: 80%;   
+ }
+ .byt2{
+     width: 70%;
+ }
+ .byt3{
+     width: 60%;    
+ }
+ 
+ 
+ .br1{
+     border-radius: 10px;
+ }
+ 
+ .br2{
+     border-radius: 20px;
+ }
+ 
+ .br3{
+     border-radius: 30px;
+ }
+ 
+ 
+ .ma1{
+     margin: 10px;
+ }
+ 
+ .ma2{
+     margin: 20px;
+ }
+ 
+ .ma3{
+     margin: 30px;
+ }
+ 
+ 
+ .m-rh-1{
+     min-height: 100px;
+ }
+ .m-rh-2{
+     min-height: 200px;
+ }
+ .m-rh-3{
+     min-height: 300px;
+ }
+ .m-rh-4{
+     min-height: 400px;
+ }
+ .m-rh-5{
+     min-height: 500px;
+ }
+ .m-rh-6{
+     min-height: 600px;
+ }
+ .box{
+    border: 2px solid cadetblue;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 95%;
+    margin: 5px;
+}
+.inputminmax{
+    padding: 5px;
+    margin: 3px;
+    width: 25%;
+    border-radius: 4px;
+}
+div{
+    margin-bottom: 5px;
+}
+
+.productcard{
+    border: 1px solid rgb(178, 174, 171);
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 8px;
+    box-shadow: -17px -4px 92px -21px rgba(0,0,0,0.4),
+    0px 25px 16px 0px rgba(0,0,0,0.2);}
+.row-pc{
+    display: flex;
+    flex: 1;   
+    flex-direction: row; 
+}
+.limit{
+    color: rgb(105, 4, 200);
+    background-color: rgb(230, 214, 244);
+    margin: 20px;
+    border-radius: 5px;
+    max-height: 5%;
+    padding: 3px;
+    font-weight: bold;
+    font-size: smaller;
+}
+.img-like{
+    margin-top: 5px;
+    margin-left: 80%;
+}
+.img-pc{
+    margin-left: 10%;
+    width: 100%;
+}
+.btn-sepet{
+    background-color: #fa6400;
+    background-clip: padding-box;
+    color: #fff;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    border-radius: 5px;
+    min-height: 30%;
+    min-width: 90%;
+    margin-left: 5%;
+    opacity: 0;
+    min-height: 3rem;
+    margin-bottom: 5px;
+}
+.btn-sepet:hover {
+    opacity: 1;
+}
+.price{
+    font-weight: bold;
+    margin-left: 5%;
+}
+

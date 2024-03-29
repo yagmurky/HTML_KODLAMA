@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 4px;
+            display: inline-block;
+        }
+        /*
+        Pseudo Element Seçimi
+        */
+        p::first-line{
+            color: green;
+        }
+        p::first-letter{
+            color: blue;
+            font-size: larger;
+        }
+        p::after{
+            color: brown;
+            content: "Ben Buradayım!";
+        }
+        ul li:first-child{
+            font-style: italic;
+            color: rgb(42, 46, 46);
+        }
+        ul li:nth-child(even){
+            border: 1px solid red;
+            margin: 2px;
+        }
+        ul li:nth-child(odd){
+            border: 1px solid rgb(243, 173, 173);
+            margin: 2px;
+        }
+        /*
+        Bir link olarak düşünürsek, eğer bir linke tıklanmışsa daha önce
+        bunun ziyaret edilip edilmediği farkındalığı için farklı renk olarak
+        gösterilir.
+        */
+        button:visited{
+            color: green;
+        }
+        button:hover{
+            color: red
+        }
+        button{
+            color: purple;
+        }
+        button:active{
+            background-color: aqua;
+        }
+        button:focus{
+            width: 100px;
+        }
+        button:hover + span{
+            display: block;
+            background-color: green;
+            color: red;
+        }
+        input[type="text"]{
+            background-color: beige;
+        }
+        input[type="text"]:focus{
+            background-color: burlywood;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" name="name" id="name">
+    <input type="text" name="password" id="name">
+    <input type="text" name="email" id="name">
+
+
+    <input type="submit" value="Kaydet">
+    <button>İşlem -1</button>
+    <button>İşlem -1</button>
+    <button>İşlem -1</button>
+    <span>Burada bulunan bir tür TAG</span>
+    <ul>
+        <li>Değer-1</li>
+        <li>Değer-2</li>
+        <li>Değer-3</li>
+        <li>Değer-4</li>
+        <li>Değer-5</li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quod iure dolorem delectus. Possimus, repudiandae? Repudiandae odio alias non error eveniet dignissimos beatae, consequuntur temporibus. Inventore natus sed voluptate exercitationem!</p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat sequi exercitationem vero temporibus minima doloribus reiciendis atque quia, obcaecati quos at doloremque provident officia veniam porro minus. Maxime, suscipit?
+        Perspiciatis libero dolor, explicabo blanditiis qui saepe error ratione? Nisi ipsum veniam iure. Quod accusantium laboriosam eius beatae dignissimos nihil, a et impedit aperiam esse rem molestias aut eligendi doloremque!
+        Et fugiat atque officiis! Dolor cum delectus totam ratione, modi asperiores nemo explicabo quae, vero voluptate error laudantium est maiores harum tempore? Laudantium eum voluptate enim nisi optio modi delectus!
+        Odit earum, beatae animi neque a optio magnam enim, aliquid corporis inventore dolore asperiores nulla soluta obcaecati rem ea quaerat ullam amet reiciendis. Id vel quas, molestiae repellendus iusto consequatur!
+    </p>
+   
+    <div class="box">İçerik-01</div>
+    <div class="box">İçerik-02</div>
+    <div class="box">İçerik-03</div>
+    <div class="box">İçerik-04</div>
+    <div class="box">İçerik-05</div>
+    <div class="box">İçerik-09</div>
+</body>
+</html>

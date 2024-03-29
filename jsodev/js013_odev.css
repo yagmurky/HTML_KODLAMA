@@ -1,0 +1,126 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(117, 139, 19);
+    height:100%;
+    background-color: rgb(252, 232, 208);
+}
+.row-1{
+    display: flex;
+    border: 1px solid rgb(219, 132, 10);
+    flex-direction: row;
+    flex: 2;
+    border-radius: 10px;
+    margin: 20px;
+}
+.row-2{
+    display: flex;
+    border: 1px solid rgb(13, 116, 137);
+    flex-direction: row;
+    flex: 3;
+    border-radius: 10px;
+    margin: 10px;
+}
+.col-1{
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+}
+.col-2{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.form-element-1{
+    display: flex;
+    width: 90%;
+    margin: 10px;
+    flex: 1;
+    margin-left: 20px;
+}
+.form-element-2{
+    display: flex;
+    width: 90%;
+    margin: 10px;
+    flex: 1;
+    margin-left: 20px;
+
+}
+.ms{
+    margin-right: 10px;
+    margin-left: 30px;
+}
+.inp1{
+    border: 1px solid saddlebrown;
+    border-radius: 10px;
+}
+.inp2{
+    border: 1px solid saddlebrown;
+    border-radius: 10px;
+    width: 180%;
+}
+.col2ic{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.btncol2ic{
+    width: 80%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid saddlebrown;
+}
+.tbl{
+    border: 1px solid salmon;
+    border-collapse: collapse;
+    margin: 10px;
+    width: 100%;
+
+}
+tr, td, th {
+    border: 1px solid salmon;
+    padding: 20px;
+}
+.duzenleButonu:hover{
+
+    background-color: rgb(142, 196, 243);
+}
+.silButonu:hover {
+    background-color:rgba(249, 73, 14, 0.788)
+}
+.duzenleButonu {
+    box-shadow: 5px 2px 2px;
+    border: 1px solid blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    color: blue;
+    background-color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.silButonu {
+    box-shadow: 5px 2px 2px red;
+    border: 1px solid red;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    color: red;
+    background-color: #fff;
+    padding: 5px 10px;
+
+}
+.duzenle-sil-div{
+    border: 1px solid rgb(42, 165, 69);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    
+}

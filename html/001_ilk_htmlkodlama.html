@@ -1,0 +1,64 @@
+<!--
+     <TAG_NAME> 
+        - SCOPE
+     </TAG_NAME> -- html tag
+    Bu taglerin scopeları boşluk kısmında kalan yerlerdir. 
+    Ayrıca her bir tag için property (prop) kullanılır ve tagi 
+    tanımladığınız <> arasında özellikler tanımlanır.
+    * bir html tag içinde 2 ana yapı bulunur
+        - header: içerisinde tanımlanan bileşenler yüklenmeden sayfayı göremezsiniz.
+        Ayrıca içinde bulunan bileşenler sayfada görünmez.
+        - body: kullanıcıların browserda gördüğü görsellerin, metinleri v.s olduğu
+        kısımdır. Bu kısım yorumlanarak web siteleri görselleştirilir.
+    DİKKAT!!!!
+    HTML kodlarını düzgün yazılma zorunluluğu yoktur, yani diğer dillerde olduğu gibi
+    nokta virgül, büyük küçük yazım yanlışı gibi sorunlar bir html sayfasının yüklenmemesine
+    sebep olmaz. sadece görsel olarak bozuk çıktı vermesine sebep olur.
+    Yani her halükarda bir html sayfası yüklenir.
+
+-->
+<html lang="tr">
+    <head>
+        <title>
+            Bu ilk web sitem
+        </title>
+    </head>
+    <body>
+        <!--
+            DIV -> bir taşıyıcı gibi, bileşenleri içerisinde barındıran, grup halinde
+            bileşenleri yönetebileceğimiz bir yapı olarak düşünün
+            id ->
+        -->
+        <div id="Container">
+            <div id="header">
+                <h1> Muhammet HOCA</h1>
+                <p> Bu sitemizde java ile ilgili güncel bilgileri göreceğiz.</p>
+            </div>
+
+            <div id="menu">
+                Menu
+                <p> - Ana sayfa</p>
+                <p> - Java </p>
+                <p> - Spring </p>
+                <p> - Database </p>
+                <p> - Kubernetes </p>
+                satır boşluğu <br> bırakmak, alt satıra geçmek için <br> kullanılır ama yayın değil.
+
+            </div>
+
+            <div id="blog">
+                <h2> Java Spring Boot </h2>
+                <p> Spring boot çalışma şekilleri ve bağımlılıkları</p>
+                <h2> Java EE & Java Server Pages </h2>
+                <p> Javanın ilk MVC template engine yapısı. <span style="background-color: yellow;"> (Java Server Pages -JSP)</span> Bu yapı ile server side web uygulamaları
+                    geliştirebilirsiniz. 
+                </p>
+            </div>
+
+            <div id="footer">
+                Footer - Açıklamalar, email gönder, bizimle iletişime geçin vb.
+            </div>
+
+        </div>
+    </body>
+</html>
